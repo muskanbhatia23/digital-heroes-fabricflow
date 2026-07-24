@@ -4,9 +4,18 @@
 
 @section('content')
 
-<div class="container py-5">
-    <h1>Welcome to FabricFlow</h1>
-    <p>The complete operating system for wholesale fashion businesses.</p>
-</div>
+@include('components.home.hero')
+
+@include('components.home.brands')
+
+@include('components.home.features')
+
+@include('components.home.why-us')
+
+@include('components.home.how-it-works')
+
+@include('components.home.testimonials')
+
+@include('components.home.cta')
 
 @endsection

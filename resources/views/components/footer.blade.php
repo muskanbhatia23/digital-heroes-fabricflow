@@ -4,7 +4,7 @@
 
             <!-- Brand -->
             <div class="col-lg-4">
-                <h4 class="fw-bold">FabricFlow</h4>
+                <h4 class="fw-bold" style="color: var(--primary)">FabricFlow</h4>
                 <p class="text-light mb-0">
                     FabricFlow empowers wholesale clothing businesses to manage inventory,
                     bulk orders, retailers, and sales through one intelligent platform.
