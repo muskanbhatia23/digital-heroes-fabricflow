@@ -1,0 +1,700 @@
+/* ======================================================
+   CONTACT PAGE
+====================================================== */
+
+.contact-page{
+    background: var(--secondary);
+    overflow: hidden;
+}
+
+/* ======================================================
+   HERO
+====================================================== */
+
+.contact-page .contact-hero{
+    padding: 140px 0 90px;
+    position: relative;
+}
+
+.contact-page .contact-badge{
+    display: inline-block;
+    background: rgba(239,215,141,.25);
+    color: var(--accent);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-page .contact-title{
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: var(--dark);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.contact-page .contact-description{
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.9;
+    max-width: 560px;
+}
+
+/* ======================================================
+   BUTTONS
+====================================================== */
+
+.contact-page .hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.contact-page .btn-primary-custom{
+
+    background: var(--accent);
+    color:#fff;
+    padding:14px 34px;
+    border-radius:12px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.contact-page .btn-primary-custom:hover{
+
+    background:var(--dark);
+    color:#fff;
+    transform:translateY(-3px);
+
+}
+
+.contact-page .btn-outline-custom{
+
+    border:2px solid var(--accent);
+    color:var(--accent);
+    padding:14px 34px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.contact-page .btn-outline-custom:hover{
+
+    background:var(--accent);
+    color:#fff;
+    transform:translateY(-3px);
+
+}
+
+/* ======================================================
+   STATS
+====================================================== */
+
+.contact-page .hero-stats{
+
+    display:flex;
+    gap:20px;
+    margin-top:50px;
+    flex-wrap:wrap;
+
+}
+
+.contact-page .stat-box{
+
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    min-width:150px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.contact-page .stat-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-page .stat-box h3{
+
+    font-size:2rem;
+    color:var(--accent);
+    font-weight:700;
+    margin-bottom:6px;
+
+}
+
+.contact-page .stat-box p{
+
+    margin:0;
+    color:#777;
+    font-size:.9rem;
+
+}
+
+/* ======================================================
+   HERO CARD
+====================================================== */
+
+.contact-page .hero-card{
+
+    background:#fff;
+    border-radius:24px;
+    padding:40px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.contact-page .hero-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-page .hero-card-icon{
+
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2rem;
+    color:var(--accent);
+    margin-bottom:25px;
+
+}
+
+.contact-page .hero-card h3{
+
+    font-size:1.8rem;
+    margin-bottom:18px;
+    color:var(--dark);
+
+}
+
+.contact-page .hero-card p{
+
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+/* ======================================================
+   HERO LIST
+====================================================== */
+
+.contact-page .hero-card-list{
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+
+}
+
+.contact-page .hero-list-item{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-weight:500;
+
+}
+
+.contact-page .hero-list-item i{
+
+    color:var(--accent);
+    font-size:1.2rem;
+
+}
+/* ======================================================
+   CONTACT SECTION
+====================================================== */
+
+.contact-page .contact-section{
+    padding: 90px 0;
+}
+
+.contact-page .contact-form-card{
+
+    background:#fff;
+    border-radius:24px;
+    padding:45px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.contact-page .contact-form-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.contact-page .section-header{
+
+    margin-bottom:35px;
+
+}
+
+.contact-page .section-header h2{
+
+    font-size:2.2rem;
+    font-weight:700;
+    color:var(--dark);
+    margin-bottom:12px;
+
+}
+
+.contact-page .section-header p{
+
+    color:#777;
+    line-height:1.8;
+    margin:0;
+
+}
+
+/* ======================================================
+   FORM
+====================================================== */
+
+.contact-page .form-label{
+
+    font-weight:600;
+    color:var(--dark);
+    margin-bottom:10px;
+
+}
+
+.contact-page .contact-input{
+
+    height:58px;
+    border:1px solid #e5e5e5;
+    border-radius:14px;
+    padding:0 18px;
+    transition:.3s;
+    box-shadow:none;
+
+}
+
+.contact-page textarea.contact-input{
+
+    height:auto;
+    min-height:170px;
+    padding:18px;
+    resize:none;
+
+}
+
+.contact-page .contact-input::placeholder{
+
+    color:#aaa;
+
+}
+
+.contact-page .contact-input:hover{
+
+    border-color:var(--primary);
+
+}
+
+.contact-page .contact-input:focus{
+
+    border-color:var(--accent);
+    box-shadow:0 0 0 .2rem rgba(222,167,76,.18);
+
+}
+
+/* ======================================================
+   SUBMIT BUTTON
+====================================================== */
+
+.contact-page .btn-submit-contact{
+
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    padding:15px 34px;
+    border-radius:14px;
+    font-weight:600;
+    transition:.35s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.contact-page .btn-submit-contact:hover{
+
+    background:var(--dark);
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/* ======================================================
+   CONTACT INFO
+====================================================== */
+
+.contact-page .contact-info-wrapper{
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+
+}
+
+.contact-page .info-card{
+
+    background:#fff;
+    border-radius:20px;
+    padding:24px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.contact-page .info-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.contact-page .info-icon{
+
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--accent);
+    font-size:1.3rem;
+    flex-shrink:0;
+
+}
+
+.contact-page .info-card h5{
+
+    margin-bottom:6px;
+    color:var(--dark);
+    font-size:1.1rem;
+
+}
+
+.contact-page .info-card p{
+
+    margin:0;
+    color:#777;
+    line-height:1.7;
+
+}
+
+/* ======================================================
+   SOCIAL CARD
+====================================================== */
+
+.contact-page .social-card{
+
+    background:#fff;
+    border-radius:20px;
+    padding:24px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.contact-page .social-icons{
+
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+
+}
+
+.contact-page .social-icons a{
+
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--accent);
+    text-decoration:none;
+    font-size:1.2rem;
+    transition:.3s;
+
+}
+
+.contact-page .social-icons a:hover{
+
+    background:var(--accent);
+    color:#fff;
+    transform:translateY(-5px);
+
+}
+/* ======================================================
+   FAQ SECTION
+====================================================== */
+
+.contact-page .faq-section{
+    padding:90px 0;
+}
+
+.contact-page .faq-section .section-badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background:rgba(239,215,141,.25);
+    color:var(--accent);
+    font-size:.85rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.contact-page .faq-section h2{
+    font-size:2.3rem;
+    font-weight:700;
+    color:var(--dark);
+}
+
+.contact-page .accordion-item{
+    border:none;
+    border-radius:18px !important;
+    overflow:hidden;
+    margin-bottom:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.contact-page .accordion-button{
+
+    background:#fff;
+    color:var(--dark);
+    font-weight:600;
+    padding:22px;
+    box-shadow:none;
+
+}
+
+.contact-page .accordion-button:not(.collapsed){
+
+    background:var(--primary);
+    color:var(--dark);
+
+}
+
+.contact-page .accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.contact-page .accordion-body{
+
+    color:#666;
+    line-height:1.8;
+    padding:22px;
+
+}
+
+/* ======================================================
+   MAP
+====================================================== */
+
+.contact-page .map-section{
+    padding-bottom:90px;
+}
+
+.contact-page .map-card{
+
+    overflow:hidden;
+    border-radius:24px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.contact-page .map-card iframe{
+
+    display:block;
+    width:100%;
+
+}
+
+/* ======================================================
+   SUCCESS TOAST
+====================================================== */
+
+.contact-page .contact-toast{
+
+    position:fixed;
+    top:30px;
+    left:50%;
+    max-width:420px;
+    width:auto;
+
+    background:#fff;
+    border-left:5px solid var(--accent);
+
+    border-radius:18px;
+    padding:16px 20px;
+
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+    opacity:0;
+    visibility:hidden;
+    transform:translate(-50%, -20px);
+
+    transition:.35s;
+
+    z-index:9999;
+
+    align-items:center;
+    gap:14px;
+
+}
+
+.contact-page .contact-toast h5{
+    white-space: nowrap;
+}
+
+.contact-page .contact-toast.show{
+
+    opacity:1;
+    visibility:visible;
+    transform:translate(-50%, 0);
+
+}
+
+.contact-page .toast-icon{
+
+    font-size:2rem;
+    color:var(--accent);
+
+}
+
+.contact-page .contact-toast h5{
+
+    margin-bottom:6px;
+    color:var(--dark);
+
+}
+
+.contact-page .contact-toast p{
+
+    margin:0;
+    color:#666;
+    line-height:1.6;
+
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width:991px){
+
+    .contact-page .contact-hero{
+
+        padding-top:120px;
+        text-align:center;
+
+    }
+
+    .contact-page .contact-title{
+
+        font-size:2.5rem;
+
+    }
+
+    .contact-page .contact-description{
+
+        margin:auto;
+
+    }
+
+    .contact-page .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .contact-page .hero-stats{
+
+        justify-content:center;
+
+    }
+
+    .contact-page .hero-card{
+
+        margin-top:20px;
+
+    }
+
+}
+
+@media (max-width:767px){
+
+    .contact-page .contact-title{
+
+        font-size:2rem;
+
+    }
+
+    .contact-page .contact-form-card{
+
+        padding:30px 24px;
+
+    }
+
+    .contact-page .hero-card{
+
+        padding:30px 24px;
+
+    }
+
+    .contact-page .info-card{
+
+        padding:20px;
+
+    }
+
+    .contact-page .contact-toast{
+
+        width:calc(100% - 30px);
+        right:15px;
+        left:15px;
+
+    }
+
+}
+.contact-page .contact-hero-image{
+    max-width:80%;
+    height:auto;
+    margin-left:3% ;
+    transform: scaleX(1.3);
+    display:block;
+    margin:auto;
+}

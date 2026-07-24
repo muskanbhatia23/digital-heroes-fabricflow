@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+     @stack('styles')
 </head>
     <body class="d-flex flex-column min-vh-100">
 
@@ -46,5 +47,6 @@ window.addEventListener('scroll', function () {
 
 });
 </script>
+@stack('scripts')
 </body>
 </html>
