@@ -1,0 +1,133 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+/* ==========================
+   Theme Colors
+========================== */
+:root {
+    --primary: #EFD78D;
+    --secondary: #F8F5ED;
+    --dark: #212020;
+    --accent: #DEA74C;
+    --text: #2F2F2F;
+}
+
+/* ==========================
+   Global Styles
+========================== */
+body {
+    background-color: var(--secondary);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================
+   Navbar
+========================== */
+.navbar {
+    background-color: var(--primary) !important;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark) !important;
+}
+
+.nav-link {
+    color: var(--dark) !important;
+    font-weight: 600;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+}
+
+/* ==========================
+   Buttons
+========================== */
+.btn-primary {
+    background-color: var(--dark);
+    border-color: var(--dark);
+    color: var(--primary);
+    padding: 10px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--dark);
+}
+
+/* ==========================
+   Headings
+========================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+/* ==========================
+   Links
+========================== */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+    background: var(--dark);
+    color: #fff;
+}
+
+footer a {
+    color: var(--primary);
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+/* ==========================
+   Utility
+========================== */
+.section-padding {
+    padding: 80px 0;
+}
+
+.shadow-soft {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.rounded-xl {
+    border-radius: 16px;
+}
