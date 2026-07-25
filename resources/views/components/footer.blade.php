@@ -13,7 +13,7 @@
 
             <!-- Quick Links -->
             <div class="col-lg-2">
-                <h6 class="fw-semibold">Quick Links</h6>
+                <h6 class="fw-semibold text-white">Quick Links</h6>
                 <ul class="list-unstyled">
                     <li><a href="{{ route('home') }}" class="text-decoration-none text-light">Home</a></li>
                     <li><a href="{{ route('product') }}" class="text-decoration-none text-light">Product</a></li>
@@ -24,7 +24,7 @@
 
             <!-- Company -->
             <div class="col-lg-3">
-                <h6 class="fw-semibold">Company</h6>
+                <h6 class="fw-semibold text-white">Company</h6>
                 <ul class="list-unstyled">
                     <li><a href="{{ route('home') }}#why-us" class="text-decoration-none text-light">About Us</a></li>
                     <li><a href="{{ route('product') }}" class="text-decoration-none text-light">Our Services</a></li>
@@ -34,7 +34,7 @@
 
             <!-- Contact -->
             <div class="col-lg-3">
-                <h6 class="fw-semibold">Contact</h6>
+                <h6 class="fw-semibold text-white">Contact</h6>
 
                 <p class="mb-2">
                     <strong>Phone:</strong><br>

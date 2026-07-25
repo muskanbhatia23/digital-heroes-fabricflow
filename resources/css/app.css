@@ -299,12 +299,30 @@ footer {
     color: #fff;
 }
 
-footer a {
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+    color: #ffffff !important;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+footer strong {
     color: var(--primary);
 }
 
+footer a {
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.3s ease;
+}
+
 footer a:hover {
-    color: var(--accent);
+    color: var(--primary) !important;
 }
 
 /* ==========================
