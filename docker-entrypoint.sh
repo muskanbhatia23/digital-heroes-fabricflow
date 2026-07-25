@@ -27,10 +27,6 @@ chown -R www-data:www-data storage bootstrap/cache database
 chmod -R 775 storage bootstrap/cache database
 
 # Generate application key if missing
-if [ -z "$APP_KEY" ]; then
-    echo "APP_KEY is not set. Generating key..."
-    php artisan key:generate --force
-fi
 
 # Execute production caching and database migrations
 echo "Optimizing Laravel configuration, routes, and views..."
