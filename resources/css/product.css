@@ -1,0 +1,344 @@
+/* ==========================================
+   VARIABLES (match your theme)
+========================================== */
+:root {
+    --accent: #DEA74C;
+    --accent-hover: #c98f2f;
+    --primary: #EFD78D;
+    --secondary: #F8F5ED;
+    --dark: #1a1a1a;
+    --text: #444;
+}
+
+/* ==========================================
+   HERO — Services Intro
+========================================== */
+.services-intro {
+    background: var(--secondary);
+    padding: 140px 0 80px;
+    text-align: center;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 50px;
+    background: rgba(222, 167, 76, 0.12);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.section-title {
+    max-width: 850px;
+    margin: 22px auto;
+    font-size: 3.3rem;
+    line-height: 1.15;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.section-title span {
+    color: var(--accent);
+}
+
+.section-text {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* ==========================================
+   ALTERNATING SECTION BACKGROUNDS
+   ⭐ The key fix — creates visual rhythm
+========================================== */
+.service-section {
+    padding: 60px 0;
+}
+
+.service-bg-primary {
+    background: #F8F5ED;
+}
+
+.service-bg-light {
+    background: #FFF9EE;
+}
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+.service-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 60px;
+    margin: 0;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternate card tint for light sections */
+.service-card.alt {
+    background: #FFFCF6;
+}
+
+/* ==========================================
+   SERVICE IMAGE
+========================================== */
+.service-image {
+    overflow: hidden;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.service-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.service-image:hover img {
+    transform: scale(1.08);
+}
+
+/* ==========================================
+   SERVICE CONTENT
+========================================== */
+.service-content {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.service-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: rgba(222, 167, 76, 0.12);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.service-card:hover .service-label {
+    background: var(--accent);
+    color: #fff;
+}
+
+.service-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 22px;
+}
+
+.service-description {
+    color: #666;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   FEATURE LIST
+========================================== */
+.service-features {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.feature-item i {
+    color: var(--accent);
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
+.feature-item span {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+.btn-primary-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    background: var(--accent);
+    color: #fff;
+    border: 2px solid var(--accent);
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    background: transparent;
+    color: var(--dark);
+    border: 2px solid var(--accent);
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   IMAGE LIGHTBOX
+========================================== */
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+.image-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-lightbox img {
+    max-width: 85%;
+    max-height: 85vh;
+    border-radius: 16px;
+    transform: scale(0.7);
+    transition: transform 0.35s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.image-lightbox.active img {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 45px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.lightbox-close:hover {
+    color: var(--accent);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+@media (max-width: 991px) {
+    .services-intro {
+        padding: 120px 0 60px;
+    }
+
+    .section-title {
+        font-size: 2.6rem;
+    }
+
+    .section-text {
+        font-size: 1rem;
+    }
+
+    .service-section {
+        padding: 50px 0;
+    }
+
+    .service-card {
+        padding: 40px;
+    }
+
+    .service-content {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .service-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-intro {
+        padding: 110px 0 50px;
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 5vw, 3.5rem);
+    }
+
+    .section-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .service-section {
+        padding: 40px 0;
+    }
+
+    .service-card {
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .service-title {
+        font-size: 1.7rem;
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+        width: 100%;
+        justify-content: center;
+    }
+}
