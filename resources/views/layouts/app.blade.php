@@ -7,6 +7,9 @@
     <title>@yield('title', 'FabricFlow')</title>
 
     <meta name="description" content="@yield('meta_description', 'FabricFlow - Wholesale Clothing Management Software')">
+    <link rel="icon" type="image/png" href="{{ asset('images/logo/logo-icon-transparent.png') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
