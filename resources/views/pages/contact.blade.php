@@ -87,8 +87,7 @@
 
                 </div>
 
-                <div class="col-lg-6" data-aos="fade-left">
-
+                <div class="col-lg-6 text-start text-lg-center" data-aos="fade-left">
 
                     <img src="{{ asset('images/contact-illustration.png') }}" alt="Contact Illustration"
                         class="img-fluid contact-hero-image">
@@ -277,39 +276,41 @@
 
                                 <h5>Working Hours</h5>
 
-                                <p>
-                                    Monday - Friday
-                                    <br>
-                                    9:00 AM - 6:00 PM
-                                </p>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
 
                             </div>
 
                         </div>
 
-                        <div class="social-card">
+                        <div class="info-card social-info-card">
 
-                            <h5 class="mb-3">
-                                Follow Us
-                            </h5>
+                            <div class="info-icon">
+                                <i class="bi bi-share-fill"></i>
+                            </div>
 
-                            <div class="social-icons">
+                            <div>
 
-                                <a href="#">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
+                                <h5>Follow Us</h5>
 
-                                <a href="#">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
+                                <div class="social-icons">
 
-                                <a href="#">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
+                                    <a href="#" aria-label="Facebook">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
 
-                                <a href="#">
-                                    <i class="bi bi-twitter-x"></i>
-                                </a>
+                                    <a href="#" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+
+                                    <a href="#" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+
+                                    <a href="#" aria-label="X">
+                                        <i class="bi bi-twitter-x"></i>
+                                    </a>
+
+                                </div>
 
                             </div>
 

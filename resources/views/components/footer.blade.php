@@ -3,16 +3,25 @@
         <div class="row gy-4">
 
             <!-- Brand -->
-            <div class="col-lg-4">
-                <h4 class="fw-bold" style="color: var(--primary)">FabricFlow</h4>
-                <p class="text-light mb-0">
+            <div class="col-lg-5">
+                <a href="{{ route('home') }}" class="d-inline-flex align-items-center text-decoration-none mb-3">
+                    <img src="{{ asset('images/logo/footer-icon.png') }}"
+                         alt="FabricFlow Logo"
+                         width="42"
+                         height="42"
+                         class="me-2">
+                    <span class="brand-text text-white fs-3">
+                        Fabric<span class="brand-text-accent">Flow</span>
+                    </span>
+                </a>
+                <p class="text-light mb-0 pe-lg-4">
                     FabricFlow empowers wholesale clothing businesses to manage inventory,
                     bulk orders, retailers, and sales through one intelligent platform.
                 </p>
             </div>
 
             <!-- Quick Links -->
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <h6 class="fw-semibold text-white">Quick Links</h6>
                 <ul class="list-unstyled">
                     <li><a href="{{ route('home') }}" class="text-decoration-none text-light">Home</a></li>
@@ -22,18 +31,8 @@
                 </ul>
             </div>
 
-            <!-- Company -->
-            <div class="col-lg-3">
-                <h6 class="fw-semibold text-white">Company</h6>
-                <ul class="list-unstyled">
-                    <li><a href="{{ route('home') }}#why-us" class="text-decoration-none text-light">About Us</a></li>
-                    <li><a href="{{ route('product') }}" class="text-decoration-none text-light">Our Services</a></li>
-                    <li><a href="{{ route('pricing') }}" class="text-decoration-none text-light">Plans & Pricing</a></li>
-                </ul>
-            </div>
-
             <!-- Contact -->
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <h6 class="fw-semibold text-white">Contact</h6>
 
                 <p class="mb-2">

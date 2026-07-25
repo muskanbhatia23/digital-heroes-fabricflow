@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
 
     <div class="container">
 
