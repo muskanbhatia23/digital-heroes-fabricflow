@@ -1,0 +1,884 @@
+/* ===========================================
+   FabricFlow Pricing Page
+   Part 1
+   Hero + Toggle + Pricing Cards
+=========================================== */
+
+.pricing-page{
+    background: var(--secondary);
+    color: var(--text);
+}
+
+/* ===========================================
+    Hero Section
+=========================================== */
+
+.pricing-hero{
+    padding:70px 0 30px;
+    background:
+        radial-gradient(circle at top right,
+        rgba(222,167,76,.12),
+        transparent 40%),
+        linear-gradient(180deg,#fff,var(--secondary));
+    position:relative;
+    overflow:hidden;
+}
+
+.pricing-hero::before{
+    content:'';
+    position:absolute;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:rgba(239,215,141,.18);
+    top:-80px;
+    left:-80px;
+    filter:blur(20px);
+}
+
+.pricing-hero::after{
+    content:'';
+    position:absolute;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:rgba(222,167,76,.12);
+    right:-60px;
+    bottom:-60px;
+    filter:blur(20px);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:820px;
+    margin:auto;
+}
+
+.section-badge{
+    display:inline-block;
+    background:rgba(222,167,76,.15);
+    color:var(--accent);
+    padding:10px 22px;
+    border-radius:50px;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.pricing-title{
+    font-size:3.4rem;
+    font-weight:800;
+    color:var(--dark);
+    line-height:1.2;
+}
+
+.pricing-title span{
+    color:var(--accent);
+}
+
+.pricing-description{
+    max-width:700px;
+    margin:auto;
+    font-size:1.08rem;
+    color:#666;
+    line-height:1.9;
+}
+
+/* ===========================================
+    Pricing Toggle
+=========================================== */
+
+.pricing-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    padding:12px 25px;
+    border-radius:60px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.pricing-toggle span{
+    font-weight:600;
+    color:#777;
+    transition:.3s;
+}
+
+.pricing-toggle span.active{
+    color:var(--accent);
+}
+
+.pricing-controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.currency-select{
+    width:120px;
+    border-radius:30px;
+    border:1px solid #ddd;
+    font-weight:600;
+    padding:10px 16px;
+}
+
+.currency-select:focus{
+    border-color:var(--accent);
+    box-shadow:none;
+}
+
+.switch{
+    position:relative;
+    display:inline-block;
+    width:58px;
+    height:30px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#ddd;
+    border-radius:30px;
+    transition:.35s;
+    cursor:pointer;
+}
+
+.slider::before{
+    content:"";
+    position:absolute;
+    width:22px;
+    height:22px;
+    left:4px;
+    bottom:4px;
+    background:#fff;
+    border-radius:50%;
+    transition:.35s;
+}
+
+.switch input:checked + .slider{
+    background:var(--accent);
+}
+
+.switch input:checked + .slider::before{
+    transform:translateX(28px);
+}
+
+/* ===========================================
+    Pricing Cards
+=========================================== */
+
+.pricing-section{
+    padding:30px 0 80px;
+}
+
+.pricing-card{
+    background:#fff;
+    border-radius:24px;
+    padding:45px 35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    transition:.35s ease;
+    border:1px solid rgba(0,0,0,.05);
+}
+
+.pricing-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+    background:transparent;
+    transition:.35s;
+}
+
+.pricing-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+}
+
+.pricing-card:hover::before{
+    background:var(--accent);
+}
+
+.pricing-card h5{
+    font-size:1.7rem;
+    font-weight:700;
+    color:var(--dark);
+}
+
+.plan-description{
+    margin-top:12px;
+    color:#777;
+    line-height:1.7;
+    min-height:55px;
+}
+
+.price{
+    margin:35px 0;
+    font-size:3.3rem;
+    font-weight:800;
+    color:var(--dark);
+    line-height:1;
+}
+
+.price span{
+    font-size:1rem;
+    color:#888;
+    font-weight:500;
+}
+
+.pricing-features{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.pricing-features li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 0;
+    color:#555;
+    border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.pricing-features li:last-child{
+    border:none;
+}
+
+.pricing-features i{
+    color:var(--accent);
+    font-size:1rem;
+}
+
+/* ===========================================
+    Featured Card
+=========================================== */
+
+.featured{
+    transform:scale(1.05);
+    border:2px solid var(--accent);
+    box-shadow:0 30px 70px rgba(222,167,76,.25);
+}
+
+.featured::before{
+    background:var(--accent);
+}
+
+.featured:hover{
+    transform:scale(1.07) translateY(-8px);
+}
+
+.popular-badge{
+    position:absolute;
+    top:22px;
+    right:-42px;
+    background:var(--accent);
+    color:#fff;
+    padding:10px 50px;
+    transform:rotate(45deg);
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.5px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* ===========================================
+    Buttons
+=========================================== */
+
+.pricing-card .btn{
+    margin-top:35px;
+    padding:14px 30px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.btn-primary-custom{
+    background:var(--accent);
+    color:#fff;
+    border:none;
+}
+
+.btn-primary-custom:hover{
+    background:var(--dark);
+    color:#fff;
+}
+
+.btn-outline-custom{
+    border:2px solid var(--accent);
+    color:var(--accent);
+    background:transparent;
+}
+
+.btn-outline-custom:hover{
+    background:var(--accent);
+    color:#fff;
+}
+
+/* ===========================================
+    Floating Animation
+=========================================== */
+
+@keyframes floatCard{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.featured{
+    animation:floatCard 4s ease-in-out infinite;
+}
+
+/* ===========================================
+    Comparison Section
+=========================================== */
+
+.comparison-section{
+    padding:100px 0;
+    background:linear-gradient(
+        180deg,
+        #fff,
+        var(--secondary)
+    );
+}
+
+.table-responsive{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.comparison-table{
+    margin:0;
+    border-collapse:collapse;
+}
+
+.comparison-table thead{
+    background:var(--dark);
+}
+
+.comparison-table thead th{
+    color:#fff;
+    padding:22px;
+    text-align:center;
+    font-size:1rem;
+    font-weight:700;
+    border:none;
+}
+
+.comparison-table thead th:first-child{
+    text-align:left;
+}
+
+.comparison-table tbody tr{
+    transition:.3s;
+}
+
+.comparison-table tbody tr:nth-child(even){
+    background:#fafafa;
+}
+
+.comparison-table tbody tr:hover{
+    background:rgba(239,215,141,.25);
+}
+
+.comparison-table td{
+    padding:18px 22px;
+    text-align:center;
+    vertical-align:middle;
+    border-color:#efefef;
+    color:#555;
+    font-weight:500;
+}
+
+.comparison-table td:first-child{
+    text-align:left;
+    color:var(--dark);
+    font-weight:600;
+}
+
+.comparison-table td:nth-child(3){
+    font-weight:700;
+    color:var(--accent);
+}
+
+.highlight-column{
+    background:rgba(239,215,141,.15);
+}
+
+.comparison-popular{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:.75rem;
+    margin-bottom:8px;
+}
+
+.comparison-table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+/* ===========================================
+    Check & Cross Colors
+=========================================== */
+
+.comparison-table td{
+    font-size:.97rem;
+}
+
+/* If using Bootstrap Icons instead */
+
+.comparison-table .bi-check-circle-fill{
+    color:#2fb344;
+    font-size:1.1rem;
+}
+
+.comparison-table .bi-x-circle-fill{
+    color:#dc3545;
+    font-size:1.1rem;
+}
+
+/* ===========================================
+    Table Animation
+=========================================== */
+
+.comparison-table tbody tr{
+    transition:
+        transform .25s ease,
+        background .25s ease;
+}
+
+.comparison-table tbody tr:hover{
+    transform:scale(1.01);
+}
+
+/* ===========================================
+    Decorative Background
+=========================================== */
+
+.comparison-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.comparison-section::before{
+    content:'';
+    position:absolute;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:rgba(222,167,76,.08);
+    top:-120px;
+    right:-80px;
+    filter:blur(10px);
+}
+
+.comparison-section::after{
+    content:'';
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(239,215,141,.18);
+    bottom:-70px;
+    left:-50px;
+}
+
+/* ===========================================
+    Smooth Card Entrance
+=========================================== */
+
+.why-card,
+.table-responsive{
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ===========================================
+    FAQ Section
+=========================================== */
+
+.faq-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.faq-section h2{
+    font-size:2.6rem;
+    font-weight:800;
+    color:var(--dark);
+}
+
+#pricingFaq{
+    max-width:900px;
+    margin:auto;
+}
+
+#pricingFaq .accordion-item{
+    border:none;
+    margin-bottom:18px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+#pricingFaq .accordion-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+#pricingFaq .accordion-button{
+    background:#fff;
+    color:var(--dark);
+    font-weight:600;
+    font-size:1rem;
+    padding:22px 25px;
+    box-shadow:none;
+}
+
+#pricingFaq .accordion-button:not(.collapsed){
+    background:rgba(239,215,141,.22);
+    color:var(--accent);
+}
+
+#pricingFaq .accordion-button:focus{
+    box-shadow:none;
+}
+
+#pricingFaq .accordion-body{
+    color:#666;
+    line-height:1.9;
+    padding:22px 25px;
+    background:#fff;
+}
+
+/* ===========================================
+    CTA Section
+=========================================== */
+
+.pricing-cta{
+    padding:110px 0;
+    background:linear-gradient(
+        180deg,
+        var(--secondary),
+        #fff
+    );
+}
+
+.cta-card{
+    background:linear-gradient(
+        135deg,
+        var(--dark),
+        #2f2f2f
+    );
+    border-radius:30px;
+    padding:70px 50px;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+}
+
+.cta-card::before{
+    content:'';
+    position:absolute;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:rgba(239,215,141,.12);
+    top:-120px;
+    right:-100px;
+}
+
+.cta-card::after{
+    content:'';
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(222,167,76,.15);
+    left:-60px;
+    bottom:-60px;
+}
+
+.cta-card>*{
+    position:relative;
+    z-index:2;
+}
+
+.cta-card h2{
+    font-size:2.7rem;
+    font-weight:800;
+}
+
+.cta-card p{
+    max-width:700px;
+    margin:20px auto 0;
+    color:rgba(255,255,255,.85);
+    line-height:1.8;
+}
+
+.cta-card .hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.cta-card .btn{
+    padding:15px 34px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.cta-card .btn-primary-custom{
+    background:var(--accent);
+    color:#fff;
+}
+
+.cta-card .btn-primary-custom:hover{
+    background:#fff;
+    color:var(--dark);
+}
+
+.cta-card .btn-outline-custom{
+    border:2px solid rgba(255,255,255,.5);
+    color:#fff;
+}
+
+.cta-card .btn-outline-custom:hover{
+    background:#fff;
+    color:var(--dark);
+    border-color:#fff;
+}
+
+/* ===========================================
+    General Animations
+=========================================== */
+
+.pricing-card,
+.why-card,
+.info-card,
+.cta-card,
+.accordion-item{
+    transition:all .35s ease;
+}
+
+.pricing-card:hover,
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.hero-buttons .btn{
+    transition:all .35s ease;
+}
+
+.hero-buttons .btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ===========================================
+    Responsive
+=========================================== */
+
+@media (max-width:1200px){
+
+    .pricing-title{
+        font-size:3rem;
+    }
+
+    .featured{
+        transform:none;
+    }
+
+    .featured:hover{
+        transform:translateY(-8px);
+    }
+
+}
+
+@media (max-width:992px){
+
+    .pricing-hero{
+        padding:70px 0 40px;
+    }
+
+    .pricing-title{
+        font-size:2.5rem;
+    }
+
+    .why-section h2,
+    .comparison-section h2,
+    .faq-section h2,
+    .cta-card h2{
+        font-size:2.2rem;
+    }
+
+    .pricing-card{
+        padding:35px 28px;
+    }
+
+    .price{
+        font-size:2.8rem;
+    }
+
+    .cta-card{
+        padding:55px 35px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .pricing-title{
+        font-size:2rem;
+    }
+
+    .pricing-description{
+        font-size:1rem;
+    }
+
+    .pricing-toggle{
+        padding:10px 18px;
+    }
+
+    .price{
+        font-size:2.5rem;
+    }
+
+    .why-card{
+        padding:35px 25px;
+    }
+
+    .comparison-table{
+        min-width:700px;
+    }
+
+    .cta-card{
+        padding:45px 25px;
+    }
+
+    .cta-card h2{
+        font-size:1.9rem;
+    }
+
+    .cta-card p{
+        font-size:.95rem;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .pricing-hero{
+        padding:60px 0 30px;
+    }
+
+    .pricing-title{
+        font-size:1.75rem;
+    }
+
+    .section-badge{
+        font-size:.75rem;
+        padding:8px 18px;
+    }
+
+    .pricing-card{
+        padding:30px 22px;
+        border-radius:18px;
+    }
+
+    .price{
+        font-size:2.2rem;
+    }
+
+    .pricing-features li{
+        font-size:.92rem;
+    }
+
+    .why-card{
+        border-radius:18px;
+    }
+
+    .cta-card{
+        border-radius:22px;
+        padding:40px 20px;
+    }
+
+    .cta-card .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .cta-card .btn{
+        width:100%;
+    }
+
+}
+
+/* ===========================================
+    Scrollbar (Comparison Table)
+=========================================== */
+
+.table-responsive::-webkit-scrollbar{
+    height:8px;
+}
+
+.table-responsive::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+    background:var(--accent);
+    border-radius:10px;
+}
+
+/* ===========================================
+    Smooth Scroll
+=========================================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+.faq-video{
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+    object-fit:contain;
+}
+
+@media (max-width:991px){
+    .faq-video{
+        max-width:320px;
+        margin-bottom:2rem;
+    }
+}
