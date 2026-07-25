@@ -26,9 +26,9 @@
             <div class="col-lg-3">
                 <h6 class="fw-semibold">Company</h6>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-light">About Us</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Privacy Policy</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Terms & Conditions</a></li>
+                    <li><a href="{{ route('home') }}#why-us" class="text-decoration-none text-light">About Us</a></li>
+                    <li><a href="{{ route('product') }}" class="text-decoration-none text-light">Our Services</a></li>
+                    <li><a href="{{ route('pricing') }}" class="text-decoration-none text-light">Plans & Pricing</a></li>
                 </ul>
             </div>
 
@@ -45,8 +45,8 @@
 
                 <p class="mb-2">
                     <strong>Email:</strong><br>
-                    <a href="mailto:muskan.officialworks@gmail.com" class="text-decoration-none text-light">
-                        muskan.officialworks@gmail.com
+                    <a href="mailto:support@fabricflow.com" class="text-decoration-none text-light">
+                        support@fabricflow.com
                     </a>
                 </p>
             </div>

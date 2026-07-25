@@ -125,7 +125,7 @@
 
                         </ul>
 
-                        <a href="#" class="btn btn-outline-custom w-100 mt-4">
+                        <a href="{{ route('contact') }}" class="btn btn-outline-custom w-100 mt-4">
                             Get Started
                         </a>
 
@@ -169,7 +169,7 @@
 
                         </ul>
 
-                        <a href="#" class="btn btn-primary-custom w-100 mt-4">
+                        <a href="{{ route('contact') }}" class="btn btn-primary-custom w-100 mt-4">
                             Start Free Trial
                         </a>
 

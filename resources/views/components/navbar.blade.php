@@ -12,7 +12,7 @@
                  class="me-2">
 
             <span class="brand-text">
-                Fabric Flow
+                Fabric<span class="brand-text-accent">Flow</span>
             </span>
 
         </a>
