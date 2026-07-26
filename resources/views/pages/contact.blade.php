@@ -294,20 +294,16 @@
 
                                 <div class="social-icons">
 
-                                    <a href="#" aria-label="Facebook">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-
-                                    <a href="#" aria-label="Instagram">
+                                    <a href="https://www.instagram.com/realshreyanshsingh/" target="_blank" rel="noopener noreferrer" class="social-insta" aria-label="Instagram">
                                         <i class="bi bi-instagram"></i>
                                     </a>
 
-                                    <a href="#" aria-label="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
+                                    <a href="https://www.facebook.com/p/Digital-Heroes-61574689734540/" target="_blank" rel="noopener noreferrer" class="social-fb" aria-label="Facebook">
+                                        <i class="bi bi-facebook"></i>
                                     </a>
 
-                                    <a href="#" aria-label="X">
-                                        <i class="bi bi-twitter-x"></i>
+                                    <a href="https://www.linkedin.com/company/digital-heroes-1/" target="_blank" rel="noopener noreferrer" class="social-linkedin" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
                                     </a>
 
                                 </div>
